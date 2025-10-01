@@ -7,7 +7,7 @@ This menu-driven python script records a number of options related to an IoT dev
 1. Install python 3, if not already present
 2. To use reference url archiving (optional), create an archive.org account 
 3. Log in to archive.org, and navigate to https://archive.org/account/s3.php to retrieve the access key, and secret key for the wayback machine api
-4. Clone this repo
+4. Clone this repohttps://github.com/da667/iot-hunter/edit/main/README.md
 5. Enter the access and secret key on the line that begins with `wayback_machine_creds` (currently line 19)
 6. run `IoT_hunter.py` and follow the prompts to generate a rule that hopefully meets your needs
 
@@ -744,3 +744,6 @@ This menu-driven python script records a number of options related to an IoT dev
     - Additional musketeer binding added in order to prepare for scope expansion into DNS, TLS cert, and TLS SNI rule generation (possibly)
     - `pylint`'ed 3,000+ lines of code manually. While I ignored a lot of frivilous things, a lot of the code has been cleaned up and modernized.
     - New sample files showing metadata outputs for snort and suricata rules (proback format rules remain unchanged)
+- 1 October 2025
+  - 3.2.2 "Sidewinder" release
+    - Fixed an infinite loop problem in option 6, for pcre choices. Whoopsie.

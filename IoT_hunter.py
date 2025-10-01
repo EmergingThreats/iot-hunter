@@ -10,7 +10,7 @@ input and output settings.
 #!/usr/bin/env python3
 __author__ = "Tony Robinson"
 __maintainer__ = "Tony Robinson / trobinson@emergingthreats.net"
-__version__ = "3.2.1"
+__version__ = "3.2.2"
 
 
 import argparse
@@ -2762,6 +2762,7 @@ def rule_loop_pcre(p_type, row, ven, cve_number):
                     else:
                         break
             metadata = "metadata:affected_product "+str(metadata_ven)+", tls_state plaintext, created_at "+ts_createdat+",  "+meta_cve+" deployment Perimeter, deployment Internal, confidence High, signature_severity Major; "+str(meta_target)
+            return param_regex, vul_string, classtype, metadata
         if arg == 7:
             print("\nNo regular expression has been chosen.\n")
             param_regex = ""
